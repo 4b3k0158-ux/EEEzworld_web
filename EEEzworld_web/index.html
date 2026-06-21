@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#120f16" name="theme-color"/>
+<meta content="異異異世界原創故事、六個故事章節與五名角色的設定集。" name="description"/>
+<title>異異異世界｜故事與角色設定集</title>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body data-motion="full" data-theme="night">
+<!-- 無障礙快速跳轉：鍵盤使用者可直接跳過導覽。 -->
+<a class="skip-link" href="#main">跳至主要內容</a>
+<!-- 頁面最上方的閱讀進度條；寬度由 JavaScript 隨捲動更新。 -->
+<div aria-hidden="true" class="reading-progress">
+<span id="progressBar"></span>
+</div>
+<!-- 手機專用頂部工具列；桌機版會隱藏。 -->
+<header class="mobile-topbar">
+<a aria-label="回到封面" class="mini-brand" href="#cover">
+<span aria-hidden="true" class="brand-sigil">✦</span>
+<span><b>異異異世界</b><small>故事與角色設定集</small></span>
+</a>
+<button aria-expanded="false" aria-label="開啟導覽" class="icon-button" id="mobileMenuBtn" type="button">
+        ☰
+      </button>
+</header>
+<div class="app-shell">
+<!-- 左側主導覽：桌機固定，手機以抽屜形式展開。 -->
+<aside aria-label="設定集章節導覽" class="sidebar" id="sidebar">
+<div class="sidebar-inner">
+<a class="brand" href="#cover">
+<span aria-hidden="true" class="brand-sigil large">✦</span>
+<span class="brand-copy">
+<small>ORIGINAL FANTASY ARCHIVE</small>
+<strong>異異異世界</strong>
+<em>奇幻冒險故事</em>
+</span>
+</a>
+<nav aria-label="主要章節" class="side-nav" id="sideNav"><a class="active" href="#cover"><span>00</span>首頁</a><a href="#roster"><span>02</span>旅程團員</a><a href="#character"><span>03</span>角色檔案</a><a href="#relations"><span>04</span>成員關係圖</a><div class="nav-group story-nav-group open"><button aria-controls="sidebarChapterNav" aria-expanded="true" class="nav-group-toggle" id="storyNavToggle" type="button"><span>05</span><b>故事章節</b><i aria-hidden="true">⌄</i></button><div aria-label="故事章節" class="chapter-nav" id="sidebarChapterNav"></div></div></nav>
+</div>
+</aside>
+<!-- 導覽收合按鈕獨立於側欄捲動層，避免被 overflow 裁切或被內容遮住。 -->
+<button aria-expanded="true" aria-label="收合導覽列" class="sidebar-collapse" id="sidebarCollapseBtn" type="button">‹</button>
+<main id="main">
+<!-- ========================================================
+             封面區：角色合影、主標題與閱讀入口
+======================================================== -->
+<section class="cover section-pad" id="cover">
+<div class="cover-copy reveal">
+<p class="eyebrow">ORIGINAL FANTASY ARCHIVE · VOL.01</p>
+<h1><span>異異異</span>世界</h1>
+<p class="cover-subtitle">
+              STORY &amp; <b>CHARACTER SETTING BOOK</b>
+</p>
+<p class="cover-lede">
+              一名渴望冒險的神奇菌類、一位不願透露過去的千年龍族，
+              加上追尋前緣的狐妖、背負詛咒的遊俠與寡言的牧師。
+              五人從一份清理史萊姆的委託開始，逐步走進被改寫的陣法與未明的陰影。
+            </p>
+<div class="cover-actions">
+<a class="primary-button" href="#story">閱讀故事 <span>→</span></a>
+<a class="ghost-button" href="#roster">查看角色</a>
+</div>
+</div>
+<div aria-label="五名旅團角色合影式排版" class="cover-art reveal">
+<!-- 兩圈軌道產生設定集封面中的魔法陣層次。 -->
+<div class="orbit orbit-a"></div>
+<div class="orbit orbit-b"></div>
+<img alt="火箭筒角色立繪" class="cover-char c1" src="assets/characters/huojiantong.webp"/>
+<img alt="玄玉角色立繪" class="cover-char c2" src="assets/characters/xuanyu.webp"/>
+<img alt="莫谷角色立繪" class="cover-char c3" src="assets/characters/mogu.webp"/>
+<img alt="靳角色立繪" class="cover-char c4" src="assets/characters/jin.webp"/>
+<img alt="魚有魚角色立繪" class="cover-char c5" src="assets/characters/yuyouyu.webp"/>
+</div>
+<a class="scroll-hint" href="#story-intro"><span></span>READ THE PROLOGUE</a>
+</section>
+<!-- ========================================================
+             故事區：先提供世界與主線簡介，再以互動閱讀器切換章節
+             ======================================================== -->
+<section class="section-pad story-section story-intro-section" id="story-intro">
+<header class="section-heading reveal">
+<div>
+<p class="eyebrow">STORY ARCHIVE</p>
+<h2>故事簡介</h2>
+</div>
+</header>
+<!-- 開頭故事簡介：先交代主角、目標與目前埋下的謎團。 -->
+<div class="story-intro-grid reveal">
+<article class="story-prologue">
+<p class="card-label">PROLOGUE / MAIN PLOT</p>
+<h3>從第一枚冒險者徽章開始</h3>
+<p>
+                身分特殊的莫谷，直到通過冒險者協會測驗後，才獲准離開叢菌森林。
+                他與長年照顧自己的鄰居火箭筒前往主城奇拉爾，途中因一袋豆腐認識玄玉，
+                又在第一份委託中遇見靳，最後於教廷迎來魚有魚。
+              </p>
+<p>
+                看似普通的史萊姆清理任務，卻牽出遭人重新啟動的聚魔陣、失落的貝殼項鍊，
+                以及火箭筒與教廷之間未說出口的舊識。五名旅人尚未真正理解彼此，
+                便已站在更大事件的入口。
+              </p>
+</article>
+<!-- 章節總覽卡片：由 JS 依 story-data.js 自動產生。 -->
+
+<!-- 完整故事閱讀器：左側章節目錄，右側顯示全文。 -->
+
+</section>
+<!-- ========================================================
+             角色名冊：搜尋、篩選與角色卡片
+======================================================== -->
+<section class="section-pad roster-section" id="roster">
+<!-- 旅團標題與角色搜尋工具共用同一列；窄螢幕時由 CSS 自動改為上下排列。 -->
+<header class="section-heading roster-heading reveal">
+<div>
+<p class="eyebrow">CHARACTER INDEX</p>
+<h2>旅程團員</h2>
+</div>
+<div class="roster-tools">
+<label class="search-box">
+<span aria-hidden="true">⌕</span>
+<input autocomplete="off" id="searchInput" placeholder="搜尋姓名、種族、職業或屬性…" type="search"/>
+</label>
+<div aria-label="角色篩選" class="filter-chips" id="filterChips">
+<button class="active" data-filter="all" type="button">
+                全部
+              </button>
+<button data-filter="human" type="button">人族</button>
+<button data-filter="other" type="button">異族</button>
+</div>
+</div>
+</header>
+
+<div class="roster-carousel" id="rosterCarousel"><button aria-label="上一組角色" class="roster-arrow roster-prev" id="rosterPrev" type="button">‹</button><div class="roster-viewport"><div class="roster-grid" id="rosterGrid"></div></div><button aria-label="下一組角色" class="roster-arrow roster-next" id="rosterNext" type="button">›</button></div><div aria-label="角色輪播頁面" class="roster-dots" id="rosterDots"></div><p class="empty-state" hidden="" id="emptyState">沒有符合條件的角色。</p>
+</section>
+<!-- ========================================================
+             角色詳細設定：立繪、資料、武器、能力圖與小秘密
+======================================================== -->
+<section class="section-pad character-section" id="character">
+<header class="section-heading reveal">
+<div>
+<p class="eyebrow">CHARACTER FILES</p>
+<h2>角色檔案</h2>
+</div>
+</header>
+<div aria-label="選擇角色" class="character-tabs" id="characterTabs" role="tablist"></div>
+<article class="character-book reveal" id="characterBook">
+<div class="portrait-panel">
+<div class="portrait-halo"></div>
+<button aria-label="放大角色立繪" class="portrait-button" id="portraitButton" type="button">
+<img alt="" id="detailPortrait" src=""/>
+</button>
+<div class="portrait-caption">
+<span id="portraitElement"></span><b id="portraitJob"></b>
+</div>
+</div>
+<div class="profile-panel">
+<div class="profile-title">
+<div>
+<p class="eyebrow" id="detailCode">ARCHIVE NO. 01</p>
+<h3 id="detailName"></h3>
+<p id="detailTagline"></p>
+</div>
+<span class="element-badge" id="elementBadge"></span>
+</div>
+<div class="profile-meta" id="profileMeta"></div>
+<div class="profile-tags" id="profileTags"></div>
+<div class="book-grid">
+<section class="paper-card story-card">
+<p class="card-label">PERSONAL STORY</p>
+<h4>個人故事</h4>
+<div id="detailStory"></div>
+</section>
+<section class="paper-card weapon-card">
+<p class="card-label">WEAPON FILE</p>
+<h4 id="weaponName"></h4>
+<p id="weaponDesc"></p>
+</section>
+<section class="paper-card stat-card">
+<div class="card-topline">
+<div>
+<p class="card-label">ABILITY DISTRIBUTION</p>
+<h4>能力分佈圖</h4>
+</div>
+<button class="text-button" id="statZoomBtn" type="button">
+                      放大
+                    </button>
+</div>
+<button aria-label="放大能力分佈圖" class="chart-button" id="chartButton" type="button">
+<img alt="" id="statChart" src=""/>
+</button>
+</section>
+<section class="paper-card secret-card">
+<div class="card-topline">
+<div>
+<p class="card-label">CLASSIFIED</p>
+<h4>小秘密</h4>
+</div>
+<span class="classified-mark">TOP SECRET</span>
+</div>
+<div class="secret-mask" id="secretMask">
+<div class="lock-icon">◇</div>
+<p>此頁已封印</p>
+<button class="reveal-secret" id="revealSecretBtn" type="button">
+                      解除封印
+                    </button>
+</div>
+<ol class="secret-list" hidden="" id="secretList"></ol>
+</section>
+</div>
+<div class="character-pager">
+<button id="prevCharacter" type="button">
+<span>←</span><small>上一位</small><b id="prevName"></b>
+</button>
+<button id="nextCharacter" type="button">
+<small>下一位</small><b id="nextName"></b><span>→</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- ========================================================
+             關係圖：由 JavaScript 產生 SVG 節點、箭頭與互動效果
+             ======================================================== -->
+<section class="section-pad relations-section" id="relations">
+<header class="section-heading reveal">
+<div>
+<p class="eyebrow">RELATION MAP</p>
+<h2>人物關係圖</h2>
+</div>
+</header>
+<div class="relations-layout relation-graph-only">
+<!-- 關係圖完全由 JavaScript + SVG 繪製；點擊任一人物節點會開啟關係介紹彈窗。 -->
+<figure class="relation-paper reveal">
+<!-- 關係線顏色圖例：僅說明視覺語意，不改動任何角色關係內容。 -->
+<div aria-label="關係線顏色說明" class="relation-legend">
+<span><i class="legend-like"></i>喜歡</span>
+<span><i class="legend-friend"></i>友好</span>
+<span><i class="legend-neutral"></i>無感</span>
+<span><i class="legend-dislike"></i>討厭</span>
+</div>
+<div aria-label="旅團五名角色的互動關係圖；可點擊人物查看關係介紹" class="relation-graph" id="relationGraph" role="group"></div>
+</figure>
+</div>
+</section><section class="section-pad story-section story-archive-section" id="story"><div class="chapter-overview reveal">
+<div class="chapter-overview-head">
+<div>
+<p class="card-label">CHAPTER INDEX</p>
+<h3>章節導覽</h3>
+</div>
+<p>點選任一章節，閱讀器會立即載入完整原稿</p>
+</div>
+<div class="chapter-cards" id="chapterCards"></div>
+</div><div class="story-reader reveal" id="storyReader">
+<aside aria-label="閱讀器章節選單" class="reader-index">
+<p class="card-label">CONTENTS</p>
+<h3>故事目錄</h3>
+<div id="readerChapterNav"></div>
+</aside>
+<article aria-live="polite" class="reader-paper">
+<header class="reader-header">
+<div>
+<p class="eyebrow" id="readerChapterCode">CHAPTER 01</p>
+<h3 id="readerChapterTitle">啟程</h3>
+<p id="readerChapterKicker"></p>
+</div>
+<span class="draft-badge" hidden="" id="readerDraftBadge">未完結</span>
+</header>
+<div class="reader-meta">
+<span id="readerLocation"></span>
+<span id="readerCast"></span>
+<span id="readerCount"></span>
+</div>
+<blockquote id="readerSummary"></blockquote>
+<!-- 文章段落由 renderStoryChapter() 填入。 -->
+<div class="reader-body" id="readerBody"></div>
+<footer class="reader-pager">
+<button id="prevChapter" type="button">
+<span>←</span><small>上一章</small><b id="prevChapterName"></b>
+</button>
+<button id="nextChapter" type="button">
+<small>下一章</small><b id="nextChapterName"></b><span>→</span>
+</button>
+</footer>
+</article>
+</div></section>
+<footer class="site-footer">
+<div>
+<span class="brand-sigil">✦</span><b>異異異世界</b>／故事與角色設定集
+          </div>
+<p>
+            Original story and character materials reorganized into a responsive
+            offline archive.
+          </p>
+</footer>
+</main>
+</div>
+<!-- 右下角閱讀設定按鈕。 -->
+<button aria-expanded="false" aria-label="開啟閱讀設定" class="settings-fab" id="settingsBtn" type="button">
+      ⚙
+    </button>
+<!-- 從右側滑出的閱讀設定面板。 -->
+<aside aria-hidden="true" aria-label="閱讀設定" class="settings-drawer" id="settingsDrawer">
+<div class="drawer-head">
+<div>
+<small>VIEW OPTIONS</small>
+<h2>閱讀設定</h2>
+</div>
+<button aria-label="關閉閱讀設定" class="icon-button" id="closeSettings" type="button">
+          ×
+        </button>
+</div>
+<div class="setting-group">
+<h3>介面主題</h3>
+<div class="segmented" id="themeControl">
+<button class="active" data-theme="night" type="button">夜幕</button>
+<button data-theme="paper" type="button">羊皮紙</button>
+</div>
+</div>
+<div class="setting-group">
+<h3>字級大小</h3>
+<div class="segmented" id="fontControl">
+<button data-font="small" type="button">小</button>
+<button class="active" data-font="normal" type="button">標準</button>
+<button data-font="large" type="button">大</button>
+</div>
+</div>
+<label class="toggle-row">
+<span><b>減少動態效果</b><small>關閉漂浮與進場動畫</small></span>
+<input id="motionToggle" type="checkbox"/><i></i>
+</label>
+<label class="toggle-row">
+<span><b>解鎖全部祕密</b><small>顯示所有角色的機密頁</small></span>
+<input id="secretToggle" type="checkbox"/><i></i>
+</label>
+<button class="reset-button" id="resetSettings" type="button">
+        恢復預設
+      </button>
+</aside>
+<!-- 共用半透明遮罩：閱讀設定或手機導覽開啟時顯示。 -->
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<!-- 圖片燈箱：用於放大角色立繪與能力圖；關係圖另有專用人物介紹彈窗。 -->
+<dialog class="lightbox" id="lightbox">
+<button aria-label="關閉圖片" class="lightbox-close" id="lightboxClose" type="button">
+        ×
+      </button>
+<img alt="" id="lightboxImage" src=""/>
+<p id="lightboxCaption"></p>
+</dialog>
+<dialog aria-labelledby="relationDialogName" class="relation-dialog" id="relationDialog">
+<!-- 關係人物彈窗：內容由 openRelationDialog() 填入，不會在未點擊時佔用頁面高度。 -->
+<button aria-label="關閉關係介紹" class="relation-dialog-close" id="relationDialogClose" type="button">×</button>
+<div class="relation-dialog-layout">
+<div class="relation-dialog-portrait" id="relationDialogPortrait">
+<img alt="" id="relationDialogImage" src=""/>
+</div>
+<div class="relation-dialog-copy">
+<p class="eyebrow">RELATION FILE</p>
+<h2 id="relationDialogName"></h2>
+<p class="relation-dialog-meta" id="relationDialogMeta"></p>
+<div class="relation-dialog-list" id="relationDialogList"></div>
+</div>
+</div>
+</dialog>
+<noscript>
+<div class="noscript">
+        此設定集需要啟用 JavaScript 才能切換故事章節與角色檔案。
+      </div>
+</noscript>
+<!-- 先載入內容資料，再載入功能程式。 -->
+<script src="js/story-data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
