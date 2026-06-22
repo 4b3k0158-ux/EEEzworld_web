@@ -2318,7 +2318,7 @@ body[data-theme="paper"] .roster-card .card-info {
 }
 
 /* ============================================================
-   14. 第三版版面調整：可收合導覽、角色輪播、程式關係圖
+   14. 可收合導覽、角色輪播、程式關係圖
    此區集中覆寫前方基礎樣式，方便日後快速找到本次新增功能。
    所有註解只存在程式碼，不會顯示在網頁畫面上。
    ============================================================ */
@@ -2884,7 +2884,7 @@ body.sidebar-collapsed .sidebar-collapse {
 
 
 /* ============================================================
-   15. 第四版互動調整：自動循環輪播與關係人物彈窗
+   15. 自動循環輪播與關係人物彈窗
    這一段只控制呈現；所有互動邏輯位於 js/app.js。
    ============================================================ */
 
@@ -2988,7 +2988,7 @@ body.sidebar-collapsed .sidebar-collapse {
   transform-origin: top center;
   filter: drop-shadow(0 28px 34px rgba(0, 0, 0, 0.36));
 }
-/* 魚有魚的 Q 版原圖比例較短，稍微放大後才能維持上半身特寫。 */
+/* 魚有魚的Q版 */
 .relation-dialog[data-character-id="yuyouyu"] .relation-dialog-portrait img {
   width: 132%;
   max-width: none;
@@ -3126,7 +3126,7 @@ body[data-motion="reduced"] .relation-dialog-close {
   transition: none !important;
 }
 
-/* 第四版裁切微調：固定彈窗高度並將立繪絕對定位，確保桌機只顯示人物上半身。 */
+/* 固定彈窗高度並將立繪絕對定位，確保桌機只顯示人物上半身。 */
 @media (min-width: 761px) {
   .relation-dialog-layout {
     height: min(720px, calc(100vh - 110px));
@@ -3168,7 +3168,7 @@ body[data-motion="reduced"] .relation-dialog-close {
 }
 
 /* ============================================================
-   16. 第五版版面精修
+   16. 
    本區只調整視覺與響應式配置，不改動任何角色或故事文字。
    ============================================================ */
 
@@ -3308,7 +3308,7 @@ body[data-theme="paper"] .story-prologue {
   object-fit: contain;
   object-position: center center;
 }
-/* Q 版魚有魚原圖比例較短，適度限制寬度以維持完整人物比例。 */
+/* Q 版魚有魚原圖修整人物比例。 */
 .character-book[data-character-id="yuyouyu"] .portrait-button img {
   width: 90%;
   margin-inline: auto;
@@ -3401,7 +3401,6 @@ body[data-theme="paper"] .story-prologue {
   padding: 19px 20px;
 }
 
-/* ---------- 16-6. 第五版響應式修整 ---------- */
 @media (max-width: 1180px) {
   .roster-heading {
     grid-template-columns: 1fr;
@@ -3503,7 +3502,7 @@ body[data-theme="paper"] .story-prologue {
 
 
 /* ============================================================
-   17. 第六版調整：獨立固定導覽與參考圖式關係箭頭
+   17. 獨立固定導覽與參考圖式關係箭頭
    此區僅覆寫版面與特效，不改動任何故事或角色內容文字。
    ============================================================ */
 
@@ -3588,9 +3587,7 @@ body[data-theme="paper"] .story-prologue {
   }
 }
 
-/* ---------- 17-2. 參考圖式關係箭頭 ----------
-   SVG 路徑已由 JavaScript 改成直線；此處控制線寬、箭頭清晰度與
-   聚焦效果。只調整透明度與陰影，不縮放線條或節點，避免抖動。 */
+/* ---------- 17-2. 參考圖式關係箭頭 ---------- */
 .relation-edge {
   stroke-width: 4.6;
   stroke-linecap: round;
@@ -3628,7 +3625,7 @@ body[data-theme="paper"] .story-prologue {
 
 
 /* ============================================================
-   18. 第七版修正：伸縮導覽防裁切與關係節點精簡
+   18. 伸縮導覽防裁切與關係節點精簡
    此區只調整導覽結構及關係圖顯示，不改動角色與故事內容。
    ============================================================ */
 
